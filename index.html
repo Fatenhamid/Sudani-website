@@ -1,0 +1,1220 @@
+```html
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="سوداني - خدمات الاتصالات والإنترنت والباقات في السودان">
+
+    <meta name="author"
+          content="Sudani Telecom">
+
+    <title>سوداني | Sudani Telecom</title>
+
+    <!-- Favicon -->
+    <link rel="icon"
+          type="image/png"
+          href="1111.png">
+
+    <!-- Google Font -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        cairo: ['Cairo', 'sans-serif']
+                    },
+
+                    colors: {
+                        sudani: {
+                            red: '#e31b23',
+                            dark: '#171717',
+                            gray: '#f5f5f5'
+                        }
+                    },
+
+                    boxShadow: {
+                        soft: '0 10px 30px rgba(0, 0, 0, 0.08)'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet"
+          href="style.css">
+</head>
+
+
+<body class="font-cairo bg-white text-gray-800">
+
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header id="header"
+            class="fixed top-0 right-0 left-0 z-50 bg-white/95 backdrop-blur-md shadow-sm">
+
+        <div class="container mx-auto px-4">
+
+            <div class="flex items-center justify-between h-20">
+
+
+                <!-- Logo -->
+                <a href="#home"
+                   class="flex items-center gap-3">
+
+                    <img src="1111.png"
+                         alt="شعار شركة سوداني"
+                         class="w-14 h-14 object-contain">
+
+                    <div class="hidden sm:block">
+                        <h2 class="text-xl font-bold text-sudani-red">
+                            سوداني
+                        </h2>
+
+                        <span class="text-xs text-gray-500">
+                            Sudani Telecom
+                        </span>
+                    </div>
+
+                </a>
+
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:block"
+                     aria-label="القائمة الرئيسية">
+
+                    <ul class="flex items-center gap-8">
+
+                        <li>
+                            <a href="#home"
+                               class="nav-link">
+                                الرئيسية
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#services"
+                               class="nav-link">
+                                خدماتنا
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#packages"
+                               class="nav-link">
+                                الباقات
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#branches"
+                               class="nav-link">
+                                الفروع
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#contact"
+                               class="nav-link">
+                                تواصل معنا
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </nav>
+
+
+                <!-- Desktop CTA -->
+                <a href="#contact"
+                   class="hidden md:inline-flex btn-primary">
+                    تواصل معنا
+                </a>
+
+
+                <!-- Mobile Menu Button -->
+                <button id="menuButton"
+                        type="button"
+                        class="md:hidden text-2xl text-gray-700"
+                        aria-label="فتح القائمة"
+                        aria-expanded="false">
+
+                    ☰
+
+                </button>
+
+            </div>
+
+
+            <!-- Mobile Navigation -->
+            <nav id="mobileMenu"
+                 class="hidden md:hidden pb-5"
+                 aria-label="قائمة الهاتف">
+
+                <ul class="flex flex-col gap-2">
+
+                    <li>
+                        <a href="#home"
+                           class="mobile-nav-link">
+                            الرئيسية
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#services"
+                           class="mobile-nav-link">
+                            خدماتنا
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#packages"
+                           class="mobile-nav-link">
+                            الباقات
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#branches"
+                           class="mobile-nav-link">
+                            الفروع
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#contact"
+                           class="mobile-nav-link">
+                            تواصل معنا
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =========================
+         MAIN
+    ========================== -->
+
+    <main>
+
+
+        <!-- =========================
+             HERO
+        ========================== -->
+
+        <section id="home"
+                 class="hero-section pt-32 pb-20 lg:pt-40 lg:pb-28">
+
+            <div class="container mx-auto px-4">
+
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+
+
+                    <!-- Hero Text -->
+                    <div class="text-center lg:text-right">
+
+                        <span class="inline-block mb-5 px-4 py-2 rounded-full bg-red-100 text-sudani-red font-semibold text-sm">
+                            مرحباً بك في سوداني
+                        </span>
+
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight text-gray-900">
+
+                            اتصالات أسهل،
+                            <span class="text-sudani-red">
+                                حياة أفضل
+                            </span>
+
+                        </h1>
+
+                        <p class="mt-6 text-xl font-semibold text-gray-700">
+                            سوداني، معاك في كل مكان
+                        </p>
+
+                        <p class="mt-4 text-gray-600 text-lg leading-8 max-w-xl mx-auto lg:mx-0">
+                            اتصل بعالمك بسهولة وسرعة مع خدمات سوداني.
+                            استمتع بخدمات الإنترنت والمكالمات والباقات التي
+                            تناسب احتياجاتك.
+                        </p>
+
+
+                        <!-- Hero Buttons -->
+                        <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+
+                            <a href="#packages"
+                               class="btn-primary">
+                                اكتشف الباقات
+                            </a>
+
+                            <a href="#services"
+                               class="btn-secondary">
+                                تعرف على خدماتنا
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Hero Image -->
+                    <div class="flex justify-center">
+
+                        <div class="hero-logo-container">
+
+                            <img src="1111.png"
+                                 alt="شعار سوداني"
+                                 class="hero-logo">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             QUICK SERVICES
+        ========================== -->
+
+        <section id="services"
+                 class="py-20 bg-gray-50">
+
+            <div class="container mx-auto px-4">
+
+
+                <!-- Section Heading -->
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        خدماتنا
+                    </span>
+
+                    <h2>
+                        كل ما تحتاجه في مكان واحد
+                    </h2>
+
+                    <p>
+                        خدمات اتصالات متنوعة مصممة لتجعل حياتك أسهل.
+                    </p>
+
+                </div>
+
+
+                <!-- Services Grid -->
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+
+                    <!-- Service 1 -->
+                    <article class="service-card">
+
+                        <div class="service-icon">
+                            📡
+                        </div>
+
+                        <h3>
+                            تغطية واسعة
+                        </h3>
+
+                        <p>
+                            شبكة قوية تساعدك على البقاء متصلاً
+                            في مختلف أنحاء السودان.
+                        </p>
+
+                    </article>
+
+
+                    <!-- Service 2 -->
+                    <article class="service-card">
+
+                        <div class="service-icon">
+                            🌐
+                        </div>
+
+                        <h3>
+                            إنترنت سريع
+                        </h3>
+
+                        <p>
+                            باقات إنترنت متنوعة وسريعة تناسب
+                            استخدامك اليومي.
+                        </p>
+
+                    </article>
+
+
+                    <!-- Service 3 -->
+                    <article class="service-card">
+
+                        <div class="service-icon">
+                            🎧
+                        </div>
+
+                        <h3>
+                            دعم متواصل
+                        </h3>
+
+                        <p>
+                            فريق دعم جاهز لمساعدتك والإجابة
+                            عن استفساراتك.
+                        </p>
+
+                    </article>
+
+
+                    <!-- Service 4 -->
+                    <article class="service-card">
+
+                        <div class="service-icon">
+                            💳
+                        </div>
+
+                        <h3>
+                            باقات مناسبة
+                        </h3>
+
+                        <p>
+                            خيارات متعددة للمكالمات والإنترنت
+                            تناسب احتياجاتك.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             BASIC SERVICES
+        ========================== -->
+
+        <section class="py-20">
+
+            <div class="container mx-auto px-4">
+
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        حلولنا
+                    </span>
+
+                    <h2>
+                        خدماتنا الأساسية
+                    </h2>
+
+                    <p>
+                        اختر الخدمة التي تناسب احتياجاتك.
+                    </p>
+
+                </div>
+
+
+                <div class="grid md:grid-cols-3 gap-8">
+
+
+                    <!-- Internet -->
+                    <article class="feature-card">
+
+                        <div class="feature-icon">
+                            🌐
+                        </div>
+
+                        <h3>
+                            باقات الإنترنت
+                        </h3>
+
+                        <p>
+                            باقات متنوعة وسريعة تناسب استخدامك
+                            اليومي والشخصي.
+                        </p>
+
+                        <a href="#packages"
+                           class="feature-link">
+                            عرض الباقات ←
+                        </a>
+
+                    </article>
+
+
+                    <!-- Calls -->
+                    <article class="feature-card">
+
+                        <div class="feature-icon">
+                            📞
+                        </div>
+
+                        <h3>
+                            باقات المكالمات
+                        </h3>
+
+                        <p>
+                            باقات مكالمات محلية بخيارات متعددة
+                            وأسعار مناسبة.
+                        </p>
+
+                        <a href="#packages"
+                           class="feature-link">
+                            عرض الباقات ←
+                        </a>
+
+                    </article>
+
+
+                    <!-- Recharge -->
+                    <article class="feature-card">
+
+                        <div class="feature-icon">
+                            💳
+                        </div>
+
+                        <h3>
+                            إعادة الشحن
+                        </h3>
+
+                        <p>
+                            اشحن رصيدك بسهولة وأمان وفي أي وقت
+                            ومن أي مكان.
+                        </p>
+
+                        <a href="#contact"
+                           class="feature-link">
+                            اشحن الآن ←
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             PACKAGES
+        ========================== -->
+
+        <section id="packages"
+                 class="py-20 bg-gray-50">
+
+            <div class="container mx-auto px-4">
+
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        الباقات
+                    </span>
+
+                    <h2>
+                        أفضل باقات سوداني
+                    </h2>
+
+                    <p>
+                        اختر الباقة التي تناسب استخدامك.
+                    </p>
+
+                </div>
+
+
+                <div class="grid md:grid-cols-3 gap-8">
+
+
+                    <!-- Daily Package -->
+                    <article class="package-card">
+
+                        <div class="package-icon">
+                            📅
+                        </div>
+
+                        <h3>
+                            الباقة اليومية
+                        </h3>
+
+                        <p>
+                            مناسبة للاستخدام اليومي.
+                        </p>
+
+                        <ul class="package-list">
+
+                            <li>
+                                ✓ إنترنت سريع
+                            </li>
+
+                            <li>
+                                ✓ تفعيل سريع
+                            </li>
+
+                            <li>
+                                ✓ مناسبة للاستخدام القصير
+                            </li>
+
+                        </ul>
+
+                        <a href="#contact"
+                           class="package-button">
+                            اختر الباقة
+                        </a>
+
+                    </article>
+
+
+                    <!-- Weekly Package -->
+                    <article class="package-card popular">
+
+                        <div class="popular-label">
+                            الأكثر طلباً
+                        </div>
+
+                        <div class="package-icon">
+                            📆
+                        </div>
+
+                        <h3>
+                            الباقة الأسبوعية
+                        </h3>
+
+                        <p>
+                            خيار مناسب للاستخدام طوال الأسبوع.
+                        </p>
+
+                        <ul class="package-list">
+
+                            <li>
+                                ✓ إنترنت سريع
+                            </li>
+
+                            <li>
+                                ✓ صلاحية أسبوعية
+                            </li>
+
+                            <li>
+                                ✓ قيمة مناسبة
+                            </li>
+
+                        </ul>
+
+                        <a href="#contact"
+                           class="package-button">
+                            اختر الباقة
+                        </a>
+
+                    </article>
+
+
+                    <!-- Monthly Package -->
+                    <article class="package-card">
+
+                        <div class="package-icon">
+                            🗓️
+                        </div>
+
+                        <h3>
+                            الباقة الشهرية
+                        </h3>
+
+                        <p>
+                            مناسبة للاستخدام المستمر طوال الشهر.
+                        </p>
+
+                        <ul class="package-list">
+
+                            <li>
+                                ✓ إنترنت سريع
+                            </li>
+
+                            <li>
+                                ✓ صلاحية شهرية
+                            </li>
+
+                            <li>
+                                ✓ استخدام مستمر
+                            </li>
+
+                        </ul>
+
+                        <a href="#contact"
+                           class="package-button">
+                            اختر الباقة
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             VIDEO
+        ========================== -->
+
+        <section class="py-20">
+
+            <div class="container mx-auto px-4">
+
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        إعلاننا
+                    </span>
+
+                    <h2>
+                        شاهد إعلان سوداني
+                    </h2>
+
+                    <p>
+                        تعرف أكثر على خدمات سوداني.
+                    </p>
+
+                </div>
+
+
+                <div class="video-container">
+
+                    <video controls
+                           preload="metadata">
+
+                        <source src="sudani.mp4"
+                                type="video/mp4">
+
+                        المتصفح الخاص بك لا يدعم تشغيل الفيديو.
+
+                    </video>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             BRANCHES
+        ========================== -->
+
+        <section id="branches"
+                 class="py-20 bg-gray-50">
+
+            <div class="container mx-auto px-4">
+
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        الفروع
+                    </span>
+
+                    <h2>
+                        أين تجدنا؟
+                    </h2>
+
+                    <p>
+                        تعرف على موقع الفرع من خلال الخريطة.
+                    </p>
+
+                </div>
+
+
+                <div class="map-container">
+
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30406.545871961123!2d34.01468909651367!3d17.70604472710984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x168733c826b379b9%3A0x3fbe638bbffacafa!2z2YXYsdmD2LIg2LPZiNiv2KfZhtmKINmE2K7Yr9mF2KfYqiDYp9mE2YXYtNiq2LHZg9mK2YY!5e0!3m2!1sar!2s!4v1786217987606!5m2!1sar!2s"
+                        title="موقع فرع سوداني"
+                        loading="lazy"
+                        allowfullscreen
+                        referrerpolicy="strict-origin-when-cross-origin">
+                    </iframe>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             CONTACT
+        ========================== -->
+
+        <section id="contact"
+                 class="py-20">
+
+            <div class="container mx-auto px-4">
+
+
+                <div class="grid lg:grid-cols-2 gap-12 items-start">
+
+
+                    <!-- Contact Info -->
+                    <div>
+
+                        <span class="section-label">
+                            تواصل معنا
+                        </span>
+
+                        <h2 class="text-4xl font-extrabold mt-4 text-gray-900">
+                            نحن هنا لمساعدتك
+                        </h2>
+
+                        <p class="mt-5 text-gray-600 leading-8">
+                            يمكنك التواصل مع شركة سوداني للاستفسار
+                            عن الباقات والخدمات أو إرسال رسالتك
+                            من خلال النموذج.
+                        </p>
+
+
+                        <div class="mt-8 space-y-5">
+
+
+                            <div class="contact-info">
+                                <span>📞</span>
+
+                                <div>
+                                    <h3>
+                                        خدمة العملاء
+                                    </h3>
+
+                                    <p>
+                                        1616
+                                    </p>
+                                </div>
+                            </div>
+
+
+                            <div class="contact-info">
+                                <span>✉️</span>
+
+                                <div>
+                                    <h3>
+                                        البريد الإلكتروني
+                                    </h3>
+
+                                    <p>
+                                        info@sudani.sd
+                                    </p>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Contact Form -->
+                    <div class="contact-form">
+
+                        <form id="contactForm"
+                              action="#"
+                              method="post">
+
+
+                            <!-- Name -->
+                            <div class="form-group">
+
+                                <label for="name">
+                                    الاسم الكامل
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    placeholder="أدخل اسمك الكامل"
+                                    autocomplete="name"
+                                    required>
+
+                            </div>
+
+
+                            <!-- Email -->
+                            <div class="form-group">
+
+                                <label for="email">
+                                    البريد الإلكتروني
+                                </label>
+
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="example@email.com"
+                                    autocomplete="email"
+                                    required>
+
+                            </div>
+
+
+                            <!-- Phone -->
+                            <div class="form-group">
+
+                                <label for="phone">
+                                    رقم الهاتف
+                                </label>
+
+                                <input
+                                    type="tel"
+                                    id="phone"
+                                    name="phone"
+                                    placeholder="أدخل رقم هاتفك"
+                                    autocomplete="tel"
+                                    required>
+
+                            </div>
+
+
+                            <!-- Birth Date -->
+                            <div class="form-group">
+
+                                <label for="birthdate">
+                                    تاريخ الميلاد
+                                </label>
+
+                                <input
+                                    type="date"
+                                    id="birthdate"
+                                    name="birthdate"
+                                    min="1900-01-01"
+                                    max="2026-08-08"
+                                    required>
+
+                            </div>
+
+
+                            <!-- Message -->
+                            <div class="form-group">
+
+                                <label for="message">
+                                    رسالتك
+                                </label>
+
+                                <textarea
+                                    id="message"
+                                    name="message"
+                                    rows="5"
+                                    placeholder="اكتب رسالتك هنا..."
+                                    required></textarea>
+
+                            </div>
+
+
+                            <!-- Submit -->
+                            <button type="submit"
+                                    class="btn-primary w-full">
+
+                                إرسال الرسالة
+
+                            </button>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             CALL TO ACTION
+        ========================== -->
+
+        <section class="cta-section py-20">
+
+            <div class="container mx-auto px-4 text-center">
+
+                <h2 class="text-3xl sm:text-4xl font-extrabold">
+                    اشحن رصيدك الآن
+                </h2>
+
+                <p class="mt-4 text-white/90 text-lg">
+                    طريقة سريعة وآمنة لشحن رصيدك في أي وقت
+                    ومن أي مكان.
+                </p>
+
+                <a href="#contact"
+                   class="inline-flex mt-8 bg-white text-sudani-red px-8 py-4 rounded-xl font-bold hover:bg-gray-100 transition">
+                    اشحن الآن
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="bg-gray-950 text-white pt-16 pb-8">
+
+        <div class="container mx-auto px-4">
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+
+
+                <!-- About -->
+                <div>
+
+                    <div class="flex items-center gap-3 mb-5">
+
+                        <img src="1111.png"
+                             alt="شعار سوداني"
+                             class="w-14 h-14 object-contain">
+
+                        <h2 class="text-xl font-bold">
+                            سوداني Sudani
+                        </h2>
+
+                    </div>
+
+                    <p class="text-gray-400 leading-8">
+                        سوداني، معاك في كل مكان.
+                    </p>
+
+                    <p class="text-gray-400 leading-8">
+                        الخيار الأول للاتصالات في السودان.
+                    </p>
+
+                </div>
+
+
+                <!-- Quick Links -->
+                <div>
+
+                    <h3 class="footer-title">
+                        روابط سريعة
+                    </h3>
+
+                    <ul class="footer-links">
+
+                        <li>
+                            <a href="#home">
+                                الرئيسية
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#services">
+                                خدماتنا
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#packages">
+                                الباقات
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#branches">
+                                الفروع
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- Services -->
+                <div>
+
+                    <h3 class="footer-title">
+                        خدماتنا
+                    </h3>
+
+                    <ul class="footer-links">
+
+                        <li>
+                            <a href="#packages">
+                                باقات الإنترنت
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#packages">
+                                باقات المكالمات
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#contact">
+                                إعادة الشحن
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#contact">
+                                الدعم
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- Contact -->
+                <div>
+
+                    <h3 class="footer-title">
+                        تواصل معنا
+                    </h3>
+
+                    <ul class="space-y-4 text-gray-400">
+
+                        <li>
+                            📞 1616
+                        </li>
+
+                        <li>
+                            ✉️ info@sudani.sd
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+            <!-- Copyright -->
+            <div class="border-t border-gray-800 mt-12 pt-6 text-center">
+
+                <p class="text-gray-500 text-sm">
+                    © 2026 Sudani Telecom. جميع الحقوق محفوظة.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script>
+
+        // Mobile Menu
+        const menuButton = document.getElementById('menuButton');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        menuButton.addEventListener('click', function () {
+
+            mobileMenu.classList.toggle('hidden');
+
+            const isOpen =
+                !mobileMenu.classList.contains('hidden');
+
+            menuButton.setAttribute(
+                'aria-expanded',
+                isOpen
+            );
+
+            menuButton.textContent =
+                isOpen ? '✕' : '☰';
+
+        });
+
+
+        // Close mobile menu after clicking a link
+        const mobileLinks =
+            document.querySelectorAll('#mobileMenu a');
+
+        mobileLinks.forEach(function (link) {
+
+            link.addEventListener('click', function () {
+
+                mobileMenu.classList.add('hidden');
+
+                menuButton.setAttribute(
+                    'aria-expanded',
+                    'false'
+                );
+
+                menuButton.textContent = '☰';
+
+            });
+
+        });
+
+
+        // Contact Form
+        const contactForm =
+            document.getElementById('contactForm');
+
+        contactForm.addEventListener('submit', function (event) {
+
+            event.preventDefault();
+
+            alert(
+                'تم إرسال رسالتك بنجاح. شكراً لتواصلك مع سوداني!'
+            );
+
+            contactForm.reset();
+
+        });
+
+    </script>
+
+</body>
+
+</html>
+```
